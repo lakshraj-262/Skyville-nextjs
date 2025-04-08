@@ -1,103 +1,104 @@
-import Image from "next/image";
+import dynamic from 'next/dynamic';
+import { memo} from 'react';
 
-export default function Home() {
+import Section from '@/components/Section';
+import Hero from '@/components/Hero';
+import { BackgroundImage } from '@/components/design/Hero';
+import Loading from '@/components/Loading';
+
+import ClientLogicWrapper from '@/components/ClientLogicWrapper';
+
+export const metadata = {
+  title: "Best Game Zone in Udaipur - Trampoline Park, Arcade Games, Bowling, Birthday Parties & More!",
+  description:
+    "Looking for fun activities in Udaipur? Visit our Game Zone, featuring a trampoline park, soft play area, arcade games, bowling, and options for birthday parties, school picnics, and kitty parties!",
+  keywords:
+    "Game zone Udaipur, Game zone, trampoline park, soft play area, arcade games, bowling, birthday parties, school picnics, kitty party, Best place for kids, Amusement Park",
+  openGraph: {
+    type: "website",
+    url: "https://skyvilleudaipur.com/",
+    title: "The Ultimate Game Zone in Udaipur - Trampoline Park, Arcade Games & More",
+    description:
+      "Visit our Game Zone in Udaipur for a trampoline park, arcade games, bowling, birthday parties, school picnics, and kitty parties! Fun for all ages.",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dg0kso6zc/image/upload/v1737452070/Untitled_design_1_dnicgn.png",
+        width: 1200,
+        height: 630,
+        alt: "Skyville Udaipur Game Zone Banner",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Skyville Udaipur",
+    description:
+      "Your premier destination for events, experiences, and more in Udaipur.",
+    images: [
+      "https://res.cloudinary.com/dg0kso6zc/image/upload/v1737452070/Untitled_design_1_dnicgn.png",
+    ],
+  },
+};
+
+
+
+// Lazy load components with dynamic import
+const Benefits = dynamic(() => import('@/components/Benefits'), {
+  loading: () => <Loading />,
+});
+const HostEvents = dynamic(() => import('@/components/HostEvents'), {
+  loading: () => <Loading />,
+});
+const Testimonials = dynamic(() => import('@/components/Testimonials'), {
+  loading: () => <Loading />,
+});
+const Pricing = dynamic(() => import('@/components/Pricing'), {
+  loading: () => <Loading />,
+});
+const Youtube = dynamic(() => import('@/components/Youtube'), {
+  loading: () => <Loading />,
+});
+
+// Memoized components
+const MemoizedHero = memo(Hero);
+const MemoizedBackgroundImage = memo(BackgroundImage);
+
+export default function HomePage() {
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <MemoizedBackgroundImage />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      <Section className="overflow-hidden md:overflow-visible" customPaddings="py-10 lg:pt-16 xl:pt-20">
+        <MemoizedHero />
+      </Section>
+
+      <Section customPaddings="overflow-hidden pt-20 pb-10 lg:pb-16 xl:pb-20">
+        <Benefits />
+      </Section>
+
+      <Section className="overflow-hidden md:overflow-visible" customPaddings="py-10 lg:py-16 xl:py-20">
+        <HostEvents />
+      </Section>
+
+      {/* Uncomment when needed */}
+      <Section>
+        <Testimonials />
+      </Section>
+      <ClientLogicWrapper/>
+      {/* <Section
+        id="pricing-section"
+        className="min-h-[400px] flex items-center justify-center overflow-hidden"
+      >
+        {loadPricing ? <Pricing /> : <Loading />}
+      </Section>
+
+      <Section
+        id="youtube-section"
+        className="min-h-[300px] flex items-center justify-center"
+      >
+        {loadYoutube ? <Youtube /> : <Loading />}
+      </Section> */}
+    </>
   );
 }
