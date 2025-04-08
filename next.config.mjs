@@ -1,4 +1,5 @@
 import withBundleAnalyzer from '@next/bundle-analyzer';
+import { createHash } from 'crypto';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -11,20 +12,11 @@ const nextConfig = {
         },
       ],
     },
-    // Enable performance optimizations
-    // reactStrictMode: true,
-    // swcMinify: true,
-    // compiler: {
-    //   removeConsole: process.env.NODE_ENV === 'production',
-    // },
-    // experimental: {
-    //   optimizeCss: true,
-    //   scrollRestoration: true,
-    //   // Enable modern optimizations
-    //   serverActions: true,
-    //   typedRoutes: true,
-    // },
-    // // Optimize page loading
+    compiler: {
+      removeConsole: process.env.NODE_ENV === 'production',
+    },
+
+    // Optimize page loading
     poweredByHeader: false,
     compress: true,
     
@@ -61,7 +53,7 @@ const nextConfig = {
                   /node_modules[/\\]/.test(module.identifier());
               },
               name(module) {
-                const hash = crypto.createHash('sha1');
+                const hash = createHash('sha1');
                 hash.update(module.identifier());
                 return 'lib-' + hash.digest('hex').substring(0, 8);
               },
