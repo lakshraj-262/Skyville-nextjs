@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Script from 'next/script';
 import { Suspense } from 'react';
-import Loading from '@/components/Loading';
+import Loading from '@/components/Loading'; 
 
 export const metadata = {
   title: "Skyville Udaipur - Game Zone & Trampoline Park",
@@ -43,13 +43,11 @@ export default function RootLayout({ children }) {
           src="https://static.elfsight.com/platform/platform.js"
           strategy="lazyOnload"
         />
-        <NonCritical />
+        <NonCritical/>
         <Header />
-        <main className="min-h-screen">
-          <Suspense fallback={<Loading />}>
-            {children}
-          </Suspense>
-        </main>
+        <Suspense fallback={<Loading />}>
+          {children}
+        </Suspense>
         <Footer />
       </body>
     </html>
