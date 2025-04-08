@@ -62,8 +62,9 @@ const EventsPage = () => {
               SKYVILLE EVENTS
             </h2>
             <p className="body-2 mt-4 text-n-2 mb-8">
-              Welcome to SKYVILLE, where every moment turns into a treasured memory! Whether you're hosting a birthday party, corporate event, or family gathering, we offer exceptional party hosting services to make it unforgettable.
+              Welcome to SKYVILLE, where every moment turns into a treasured memory! Whether you&apos;re hosting a birthday party, corporate event, or family gathering, we offer exceptional party hosting services to make it unforgettable.
             </p>
+
             <Link href="/book-now">
               <button className="px-8 py-4 bg-gradient-to-r from-color-1 to-[#9955FF] rounded-xl text-white font-medium 
                 transition-all transform lg:hover:scale-105 lg:hover:shadow-lg lg:hover:shadow-color-1/20 flex items-center gap-2 mx-auto">
