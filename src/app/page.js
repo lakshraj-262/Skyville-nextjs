@@ -1,12 +1,14 @@
 import dynamic from 'next/dynamic';
-import { memo} from 'react';
-
 import Section from '@/components/Section';
 import Hero from '@/components/Hero';
 import { BackgroundImage } from '@/components/design/Hero';
-import Loading from '@/components/Loading';
-
 import ClientLogicWrapper from '@/components/ClientLogicWrapper';
+import Benefits from '@/components/Benefits';
+import HostEvents from '@/components/HostEvents';
+// Lazy load only the heavy Testimonials component
+const Testimonials = dynamic(() => import('@/components/Testimonials'), {
+  loading: () => <p className="text-center py-10">Loading testimonials...</p>,
+});
 
 export const metadata = {
   title: "Best Game Zone in Udaipur - Trampoline Park, Arcade Games, Bowling, Birthday Parties & More!",
@@ -32,45 +34,20 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Skyville Udaipur",
-    description:
-      "Your premier destination for events, experiences, and more in Udaipur.",
+    description: "Your premier destination for events, experiences, and more in Udaipur.",
     images: [
       "https://res.cloudinary.com/dg0kso6zc/image/upload/v1737452070/Untitled_design_1_dnicgn.png",
     ],
   },
 };
 
-
-
-// Lazy load components with dynamic import
-const Benefits = dynamic(() => import('@/components/Benefits'), {
-  loading: () => <Loading />,
-});
-const HostEvents = dynamic(() => import('@/components/HostEvents'), {
-  loading: () => <Loading />,
-});
-const Testimonials = dynamic(() => import('@/components/Testimonials'), {
-  loading: () => <Loading />,
-});
-const Pricing = dynamic(() => import('@/components/Pricing'), {
-  loading: () => <Loading />,
-});
-const Youtube = dynamic(() => import('@/components/Youtube'), {
-  loading: () => <Loading />,
-});
-
-// Memoized components
-const MemoizedHero = memo(Hero);
-const MemoizedBackgroundImage = memo(BackgroundImage);
-
 export default function HomePage() {
-
   return (
     <>
-      <MemoizedBackgroundImage />
+      <BackgroundImage />
 
       <Section className="overflow-hidden md:overflow-visible" customPaddings="py-10 lg:pt-16 xl:pt-20">
-        <MemoizedHero />
+        <Hero />
       </Section>
 
       <Section customPaddings="overflow-hidden pt-20 pb-10 lg:pb-16 xl:pb-20">
@@ -81,24 +58,11 @@ export default function HomePage() {
         <HostEvents />
       </Section>
 
-      {/* Uncomment when needed */}
       <Section>
         <Testimonials />
       </Section>
-      <ClientLogicWrapper/>
-      {/* <Section
-        id="pricing-section"
-        className="min-h-[400px] flex items-center justify-center overflow-hidden"
-      >
-        {loadPricing ? <Pricing /> : <Loading />}
-      </Section>
 
-      <Section
-        id="youtube-section"
-        className="min-h-[300px] flex items-center justify-center"
-      >
-        {loadYoutube ? <Youtube /> : <Loading />}
-      </Section> */}
+      <ClientLogicWrapper />
     </>
   );
 }

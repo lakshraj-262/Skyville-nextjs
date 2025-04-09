@@ -24,7 +24,7 @@ export const metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
+  }, 
   openGraph: {
     title: "Skyville Udaipur",
     description:

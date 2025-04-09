@@ -27,9 +27,9 @@ const ScrollToTopOnRouteChange = dynamic(() => import('@/components/ScrollToTopO
 function NonCritical() {
     return (
       <>
-        <Suspense fallback={<Loading />}>
+        {/* <Suspense fallback={<Loading />}>
           <OfferPopup />
-        </Suspense>
+        </Suspense> */}
         <Suspense fallback={<Loading />}>
           <FloatingContact />
         </Suspense>
