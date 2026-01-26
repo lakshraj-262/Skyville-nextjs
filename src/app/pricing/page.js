@@ -16,7 +16,7 @@ export const metadata = {
       "Explore our pricing for games, birthday packages, school picnics, and more at Skyville Udaipur.",
     images: [
       {
-        url: "https://res.cloudinary.com/dg0kso6zc/image/upload/v1737452070/Untitled_design_1_dnicgn.png",
+        url: "/assets/logo.svg",
         width: 1200,
         height: 630,
         alt: "Skyville Pricing",
@@ -29,7 +29,7 @@ export const metadata = {
     description:
       "Find the best value for fun at Skyville with our transparent and budget-friendly pricing.",
     images: [
-      "https://res.cloudinary.com/dg0kso6zc/image/upload/v1737452070/Untitled_design_1_dnicgn.png",
+      "/assets/logo.svg",
     ],
   },
 };
@@ -46,8 +46,8 @@ export default function PricingPage() {
         />
 
         <div className="flex justify-center items-center max-w-4xl mx-auto">
-          <Image
-            src="https://res.cloudinary.com/dg0kso6zc/image/upload/v1744104775/IMG_5804_k3phkn.avif"
+          <img
+            src="https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/Price.avif"
             alt="Pricing Hero"
             width={900}
             height={600}

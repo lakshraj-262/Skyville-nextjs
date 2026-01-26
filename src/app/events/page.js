@@ -19,7 +19,7 @@ export const metadata = {
       "Host amazing events at Skyville Udaipur — trampoline parties, arcade fun, school events, and more!",
     images: [
       {
-        url: "https://res.cloudinary.com/dg0kso6zc/image/upload/v1737452070/Untitled_design_1_dnicgn.png",
+        url: "/assets/logo.svg",
         width: 1200,
         height: 630,
         alt: "Skyville Events - Game Zone in Udaipur",
@@ -32,7 +32,7 @@ export const metadata = {
     description:
       "Make your events unforgettable with Skyville — the ultimate game zone and party place in Udaipur.",
     images: [
-      "https://res.cloudinary.com/dg0kso6zc/image/upload/v1737452070/Untitled_design_1_dnicgn.png",
+      "/assets/logo.svg",
     ],
   },
 };

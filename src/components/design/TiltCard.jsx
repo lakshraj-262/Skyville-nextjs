@@ -11,7 +11,7 @@ function TiltCard({ className, image, title, description, alt }) {
     const checkDevice = () => {
       setIsLargeScreen(window.innerWidth >= 1024);
     };
-    
+
     checkDevice();
     window.addEventListener('resize', checkDevice);
     return () => window.removeEventListener('resize', checkDevice);
@@ -31,12 +31,12 @@ function TiltCard({ className, image, title, description, alt }) {
         />
       )}
       <div className="aspect-square w-full relative">
-        <Image
-          src={image}
-          alt={alt}
-          className={`${className} w-full h-full object-cover rounded-t-lg lg:grayscale duration-700 lg:group-hover:grayscale-0`}
-          width={200}
-          height={200}
+        <img
+        src={image}
+        alt={alt}
+        className={`${className} w-full h-full object-cover rounded-t-lg lg:grayscale duration-700 lg:group-hover:grayscale-0`}
+        width={200}
+        height={200}
         />
       </div>
       <div className="p-4">

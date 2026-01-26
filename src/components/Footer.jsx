@@ -2,12 +2,11 @@
 
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+
 
 import { socials } from "../constants";
 import { Mail, Phone, MapPin } from "lucide-react";
 
-import logo from "../assets/logo.svg";
 
 const Footer = () => {
   return (
@@ -18,7 +17,7 @@ const Footer = () => {
           {/* Logo and company info */}
           <div className="flex flex-col items-center justify-center mb-8 md:flex-none md:items-start md:justify-start md:mb-0">
             <Link href="/" className="inline-block mb-2">
-              <Image src={logo} width={150} height={40} alt="Skyville Udaipur Logo" />
+              <img src="/assets/logo.svg" width={150} height={40} alt="Skyville Udaipur Logo" />
             </Link>
             <p className="text-sm text-gray-400 mt-2 mb-4">
               Where fun meets adventure!
@@ -32,7 +31,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-10 h-10 bg-gray-800 rounded-full transition-colors hover:bg-gray-700"
                 >
-                  <Image src={item.iconUrl} width={16} height={16} alt={item.title} />
+                  <img src={item.iconUrl} width={16} height={16} alt={item.title} />
                 </a>
               ))}
             </div>

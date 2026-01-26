@@ -25,10 +25,10 @@ function TiltCard({ className, image, title, description, alt }) {
   // Basic card content without effects
   const CardContent = () => (
     <div className='flex-col overflow-hidden rounded-xl bg-gradient-to-b from-n-8/0 to-n-8/90'>
-      <Image
-        src={image}
-        alt={alt}
-        className={`${className} rounded-lg object-cover lg:grayscale duration-700 lg:group-hover:grayscale-0`}
+      <img
+      src={image}
+      alt={alt}
+      className={`${className} rounded-lg object-cover lg:grayscale duration-700 lg:group-hover:grayscale-0`}
       />
       <div className="p-2">
         <h4 className="body-1 py-1 font-semibold">{title}</h4>
@@ -43,7 +43,7 @@ function TiltCard({ className, image, title, description, alt }) {
   if (!isDesktop) {
     return (
       <div className='aspect-square max-w-sm mx-auto group'>
-      {/* <div className="aspect-video max-w-sm mx-auto relative z-10 overflow-hidden"> */}
+        {/* <div className="aspect-video max-w-sm mx-auto relative z-10 overflow-hidden"> */}
         <CardContent />
       </div>
     );

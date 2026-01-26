@@ -1,256 +1,242 @@
-import {
-    bowling,
-    facebook,
-    instagram,
-    trampoline,
-    vr,
-    arcade,
-    food,
-    playground,
-    youtube,
-    WhatsappFooter,
-  } from "../assets";
-  
+export const navigation = [
+  {
+    id: "0",
+    title: "Home",
+    url: "/",
+  },
+  {
+    id: "1",
+    title: "Pricing",
+    url: "/pricing",
+  },
+  {
+    id: "2",
+    title: "Safety",
+    url: "/safety",
+  },
+  {
+    id: "3",
+    title: "Events",
+    url: "/events",
+  },
+  {
+    id: "4",
+    title: "Contact Us",
+    url: "/contact",
+  },
+];
 
-  export const navigation = [
-    {
-      id: "0",
-      title: "Home",
-      url: "/",
-    },
-    {
-      id: "1",
-      title: "Pricing",
-      url: "/pricing",
-    },
-    {
-      id: "2",
-      title: "Safety",
-      url: "/safety",
-    },
-    {
-      id: "3",
-      title: "Events",
-      url: "/events",
-    },
-    {
-      id: "4",
-      title: "Contact Us",
-      url: "/contact",
-    },
-  ];
-  
-  export const pricing = [
-    {
-      id: "0",
-      title: "Trampoline Park",
-      description: "All above 8 Years Bounce into fun, where the sky's the limit!",
-      price: "600-700",
-      features: [
-        "1-hour trampoline access",
-        "Grip socks included",
-        "Locker access",
-        "Safety briefing",
-        "Basic game zone access"
-      ],
-    },
-    {
-      id: "1",
-      title: "Soft Play Area",
-      description: "Ideal for kids below 8 Years, A world of fun, just for the little ones",
-      price: "450-550",
-      features: [
-        "1-hour pass",
-        "Soft, small slides for kids to climb up and slide down",
-        "Locker access",
-        "Padded flooring to ensure safety and cushion falls",
-        "Small trampoline areas",
-        "A large area filled with soft plastic balls for kids to dive into and play."
-      ],
-    },
-    {
-      id: "2",
-      title: "Arcade Games",
-      description: "Arcade action, endless excitement! VR games awaits Here!",
-      price: "Min. 500",
-      features: [
-        "Interactive Controls",
-        "Multiplayer Options",
-        "Bonus Rounds and Power-Ups",
-        "Exciting Visuals and Sounds",
-        "Progressive Levels",
-        "Ticket Redemption",
-        "360 Degree Cycle Round"
-      ],
-    },
-  ];
-  
-  export const benefits = [
-    {
-      id: "1",
-      title: "Trampoline Park",
-      text: "Freestyle Jump Zones: Large open trampoline areas for free bouncing and flips.",
+export const pricing = [
+  {
+    id: "0",
+    title: "Trampoline Park",
+    description: "All above 8 Years Bounce into fun, where the sky's the limit!",
+    price: "600-700",
+    features: [
+      "1-hour trampoline access",
+      "Grip socks included",
+      "Locker access",
+      "Safety briefing",
+      "Basic game zone access"
+    ],
+  },
+  {
+    id: "1",
+    title: "Soft Play Area",
+    description: "Ideal for kids below 8 Years, A world of fun, just for the little ones",
+    price: "450-550",
+    features: [
+      "1-hour pass",
+      "Soft, small slides for kids to climb up and slide down",
+      "Locker access",
+      "Padded flooring to ensure safety and cushion falls",
+      "Small trampoline areas",
+      "A large area filled with soft plastic balls for kids to dive into and play."
+    ],
+  },
+  {
+    id: "2",
+    title: "Arcade Games",
+    description: "Arcade action, endless excitement! VR games awaits Here!",
+    price: "Min. 500",
+    features: [
+      "Interactive Controls",
+      "Multiplayer Options",
+      "Bonus Rounds and Power-Ups",
+      "Exciting Visuals and Sounds",
+      "Progressive Levels",
+      "Ticket Redemption",
+      "360 Degree Cycle Round"
+    ],
+  },
+];
 
-      iconUrl: trampoline,
-      imageUrl: "https://res.cloudinary.com/dg0kso6zc/image/upload/v1736691133/skyville-gamezone-trampoline_r0e8gh.avif",
-      light: true,
-      
-    },
-    {
-      id: "2",
-      title: "VR and Simulators",
-      text: "Virtual reality games and car or flight simulators for immersive fun.",
+export const benefits = [
+  {
+    id: "1",
+    title: "Trampoline Park",
+    text: "Freestyle Jump Zones: Large open trampoline areas for free bouncing and flips.",
 
-      iconUrl: vr,
-      imageUrl: "https://res.cloudinary.com/dg0kso6zc/image/upload/v1736691135/skyville-gamezone-vr_wrgiiz.avif",
-      light: true,
-    },
-    {
-      id: "3",
-      title: "Arcade Area",
-      text: "Multiplayer games: Racing, shooting, or sports games for competitive fun with friends.",
-  
-      iconUrl: arcade,
-      imageUrl: "https://res.cloudinary.com/dg0kso6zc/image/upload/v1736694828/arcade_image_cngm8l.avif",
-      light: true,
-    },
-    {
-      id: "4",
-      title: "Toddler Play Zone",
-      text: "Safe and fun for little climbers, with gentle slides and soft surfaces.",
+    iconUrl: "/assets/benefits/trampoline.svg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-trampoline.avif",
+    light: true,
 
-      iconUrl: playground,
-      imageUrl: "https://res.cloudinary.com/dg0kso6zc/image/upload/v1736691131/skyville-gamezone-playground_nma4lg.avif",
-      light: true,
-    },
-    {
-      id: "5",
-      title: "Bowling Alley",
-      text: "Enjoy premium bowling lanes for friendly competition and fun.",
-      iconUrl: bowling,
-      imageUrl: "https://res.cloudinary.com/dg0kso6zc/image/upload/v1736691136/skyville-gamezone-bowling_qdtc7o.avif",
-      light: true,
-    },
-    {
-      id: "6",
-      title: "Food Area",
-      text: "Comfortable seating areas to unwind and celebrate special occasions.",
-      iconUrl: food,
-      imageUrl: "https://res.cloudinary.com/dg0kso6zc/image/upload/v1736691128/skyville-gamezone-food_qvefdd.avif",
-      light: true,
-    },
-    
-  ];
-  
-  export const socials = [
-    {
-      id: "0",
-      title: "Instagram",
-      iconUrl: instagram,
-      url: "https://www.instagram.com/skyvilleudaipur?utm_source=qr",
-    },
-    {
-      id: "1",
-      title: "Youtube",
-      iconUrl: youtube,
-      url: "https://www.youtube.com/@skyvilleudaipur",
-    },
-    {
-      id: "2",
-      title: "Facebook",
-      iconUrl: facebook,
-      url: "https://www.facebook.com/skyvilleudaipur",
-    },
-    {
-      id: "3",
-      title: "Whatsapp",
-      iconUrl: WhatsappFooter,
-      url: "https://wa.me/9468578138",
-    },
-  ];
+  },
+  {
+    id: "2",
+    title: "VR and Simulators",
+    text: "Virtual reality games and car or flight simulators for immersive fun.",
 
-  
- export const faqData = [
-    {
-      id: 'getting-started',
-      question: 'How do I book an event at Skyville?',
-      answer:
-        'To book an event at Skyville, visit our "Host Events" page. You can choose from various packages tailored to your needs. Fill out the booking form, and our team will get back to you with confirmation and details.',
-    },
-    {
-      id: 'activities-offered',
-      question: 'What activities are available at Skyville?',
-      answer:
-        'Skyville offers a wide range of activities including arcade games, trampoline parks, bowling, and virtual reality experiences. Check our Activities page for a complete list and descriptions of each offering.',
-    },
-    {
-      id: 'party-packages',
-      question: 'What are the party packages available?',
-      answer:
-        'We provide customizable party packages for birthdays, corporate events, and family reunions. Each package includes options for food, activities, and decorations. Visit our Pricing page for more details.',
-    },
-    {
-      id: 'community-engagement',
-      question: 'How can I stay updated with Skyville events?',
-      answer:
-        'Follow us on our social media channels and subscribe to our newsletter to stay informed about upcoming events, special offers, and community activities. Join our community for exclusive updates and insights.',
-    },
-  ];
+    iconUrl: "/assets/benefits/vr.svg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-vr.avif",
+    light: true,
+  },
+  {
+    id: "3",
+    title: "Arcade Area",
+    text: "Multiplayer games: Racing, shooting, or sports games for competitive fun with friends.",
 
-  export const projects = [
-    {
-        title: "Arcade Games",
-        description: "Step into the ultimate gaming zone! From classic arcade hits to modern action-packed games, experience endless fun and excitement. Perfect for gamers of all ages.",
-        src: "https://res.cloudinary.com/dg0kso6zc/video/upload/v1736691138/skyville-gamezone-arcade_lqbnop.webm",
-        alt: "gamezone",
-        url: "https://skyvilleudaipur.com/arcade-games"
-    },
-    {
-        title: "Trampoline/Soft Play",
-        description: "Bounce, flip, and play in our state-of-the-art trampoline park! Younger kids can enjoy a safe and fun-filled soft play area designed just for them.",
-        src: "https://res.cloudinary.com/dg0kso6zc/video/upload/v1736691149/skyville-gamezone-trampoline_yxaixx.webm", // Replace with the actual video file
-        alt: "gamezone",
-        url: "https://skyvilleudaipur.com/trampoline-soft-play"
-    },
-    {
-        title: "Bowling",
-        description: "Challenge your friends to an exciting game of bowling! With premium lanes and a lively atmosphere, it's the perfect place for fun and friendly competition.",
-        src: "https://res.cloudinary.com/dg0kso6zc/video/upload/v1736691127/skyville-gamezone-bowling_hn94vx.webm", // Replace with the actual video file
-        alt: "gamezone",
-        url: "https://skyvilleudaipur.com/bowling"
-    },
-    {
-        title: "Parties & Events",
-        description: "Host unforgettable celebrations at Skyville! Whether it's a birthday, corporate gathering, or special event, we’ve got customizable packages to make your day extraordinary.",
-        src: "https://res.cloudinary.com/dg0kso6zc/video/upload/v1736704323/skyville-gamezone-events_jvo60f.webm", // Replace with the actual video file
-        alt: "gamezone",
-        url: "https://skyvilleudaipur.com/parties-events"
-    }
+    iconUrl: "/assets/benefits/arcade.svg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/arcade_image.avif",
+    light: true,
+  },
+  {
+    id: "4",
+    title: "Toddler Play Zone",
+    text: "Safe and fun for little climbers, with gentle slides and soft surfaces.",
+
+    iconUrl: "/assets/benefits/playground.svg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-playground.avif",
+    light: true,
+  },
+  {
+    id: "5",
+    title: "Bowling Alley",
+    text: "Enjoy premium bowling lanes for friendly competition and fun.",
+    iconUrl: "/assets/benefits/bowling.svg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-bowling.avif",
+    light: true,
+  },
+  {
+    id: "6",
+    title: "Food Area",
+    text: "Comfortable seating areas to unwind and celebrate special occasions.",
+    iconUrl: "/assets/benefits/food.svg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-food.avif",
+    light: true,
+  },
+
+];
+
+export const socials = [
+  {
+    id: "0",
+    title: "Instagram",
+    iconUrl: "/assets/socials/instagram.svg",
+    url: "https://www.instagram.com/skyvilleudaipur?utm_source=qr",
+  },
+  {
+    id: "1",
+    title: "Youtube",
+    iconUrl: "/assets/socials/youtube.svg",
+    url: "https://www.youtube.com/@skyvilleudaipur",
+  },
+  {
+    id: "2",
+    title: "Facebook",
+    iconUrl: "/assets/socials/facebook.svg",
+    url: "https://www.facebook.com/skyvilleudaipur",
+  },
+  {
+    id: "3",
+    title: "Whatsapp",
+    iconUrl: "/assets/socials/WhatsappFooter.svg",
+    url: "https://wa.me/9468578138",
+  },
+];
+
+
+export const faqData = [
+  {
+    id: 'getting-started',
+    question: 'How do I book an event at Skyville?',
+    answer:
+      'To book an event at Skyville, visit our "Host Events" page. You can choose from various packages tailored to your needs. Fill out the booking form, and our team will get back to you with confirmation and details.',
+  },
+  {
+    id: 'activities-offered',
+    question: 'What activities are available at Skyville?',
+    answer:
+      'Skyville offers a wide range of activities including arcade games, trampoline parks, bowling, and virtual reality experiences. Check our Activities page for a complete list and descriptions of each offering.',
+  },
+  {
+    id: 'party-packages',
+    question: 'What are the party packages available?',
+    answer:
+      'We provide customizable party packages for birthdays, corporate events, and family reunions. Each package includes options for food, activities, and decorations. Visit our Pricing page for more details.',
+  },
+  {
+    id: 'community-engagement',
+    question: 'How can I stay updated with Skyville events?',
+    answer:
+      'Follow us on our social media channels and subscribe to our newsletter to stay informed about upcoming events, special offers, and community activities. Join our community for exclusive updates and insights.',
+  },
+];
+
+export const projects = [
+  {
+    title: "Arcade Games",
+    description: "Step into the ultimate gaming zone! From classic arcade hits to modern action-packed games, experience endless fun and excitement. Perfect for gamers of all ages.",
+    src: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-arcade.webm",
+    alt: "gamezone",
+    url: "https://skyvilleudaipur.com/arcade-games"
+  },
+  {
+    title: "Trampoline/Soft Play",
+    description: "Bounce, flip, and play in our state-of-the-art trampoline park! Younger kids can enjoy a safe and fun-filled soft play area designed just for them.",
+    src: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-trampoline.webm", // Replace with the actual video file
+    alt: "gamezone",
+    url: "https://skyvilleudaipur.com/trampoline-soft-play"
+  },
+  {
+    title: "Bowling",
+    description: "Challenge your friends to an exciting game of bowling! With premium lanes and a lively atmosphere, it's the perfect place for fun and friendly competition.",
+    src: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-bowling.webm", // Replace with the actual video file
+    alt: "gamezone",
+    url: "https://skyvilleudaipur.com/bowling"
+  },
+  {
+    title: "Parties & Events",
+    description: "Host unforgettable celebrations at Skyville! Whether it's a birthday, corporate gathering, or special event, we’ve got customizable packages to make your day extraordinary.",
+    src: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-events.webm", // Replace with the actual video file
+    alt: "gamezone",
+    url: "https://skyvilleudaipur.com/parties-events"
+  }
 ];
 
 export const eventTypes = [
   {
     name: 'Birthday Parties',
     description: 'Unforgettable celebrations for all ages.',
-    image: "https://res.cloudinary.com/dg0kso6zc/image/upload/v1737446590/BIRTHDAY_2_cojc4u.avif",
+    image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-birthday-parties.avif",
     alt: 'gamezone'
   },
   {
     name: 'Corporate Events',
     description: 'Team building and networking in a fun environment.',
-    image: "https://res.cloudinary.com/dg0kso6zc/image/upload/v1737449174/skyville-gamezone-c1_nzijru.avif",
+    image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-corporate-events.avif",
     alt: 'gamezone'
   },
   {
     name: 'School Trips',
     description: 'Educational and entertaining outings for students.',
-    image: "https://res.cloudinary.com/dg0kso6zc/image/upload/v1737447447/skyville-gamezone-s2_1_mcygbs.avif",
+    image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-school-trips.avif",
     alt: 'gamezone'
   },
   {
     name: 'Kitty Party',
     description: 'Create lasting memories with your loved ones.',
-    image: "https://res.cloudinary.com/dg0kso6zc/image/upload/v1737447753/skyville-gamezone-k5_gxswtg.avif",
+    image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-family-reunions.avif",
     alt: 'gamezone'
   },
 ]
@@ -261,7 +247,7 @@ export const testimonials = [
     author: "Priya Sharma",
     role: "Parent of two",
     rating: 5,
-    image: "https://res.cloudinary.com/dg0kso6zc/image/upload/v1736691133/skyville-gamezone-t4_bcvpkj.jpg",
+    image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-t4.jpg",
     alt: "gamezone"
   },
   {
@@ -269,7 +255,7 @@ export const testimonials = [
     author: "Rahul Mehra",
     role: "Birthday Celebrant",
     rating: 5,
-    image: "https://res.cloudinary.com/dg0kso6zc/image/upload/v1736691133/skyville-gamezone-t3_pnugrl.jpg",
+    image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-t3.jpg",
     alt: "gamezone"
   },
   {
@@ -277,7 +263,7 @@ export const testimonials = [
     author: "Aisha Khan",
     role: "Gaming Enthusiast",
     rating: 4,
-    image: "https://res.cloudinary.com/dg0kso6zc/image/upload/v1736691133/skyville-gamezone-t5_lwluzs.jpg",
+    image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-t5.jpg",
     alt: "gamezone"
   },
   {
@@ -285,17 +271,17 @@ export const testimonials = [
     author: "Suresh Gupta",
     role: "Father of one",
     rating: 5,
-    image: "https://res.cloudinary.com/dg0kso6zc/image/upload/v1736691132/skyville-gamezone-t2_wbgrzr.jpg",
+    image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-t2.jpg",
     alt: "gamezone"
   },
-  {
-    text: "Absolutely loved the playground area! My niece couldn’t stop smiling the whole time. The environment is clean, safe, and perfect for kids. The staff ensures everyone has a great time.",
-    author: "Neha Verma",
-    role: "Aunt",
-    rating: 4,
-    image: "https://res.cloudinary.com/dg0kso6zc/image/upload/v1736691132/skyville-gamezone-t1_xcx9t4.png",
-    alt: "gamezone"
-  }
+  // {
+  //   text: "Absolutely loved the playground area! My niece couldn’t stop smiling the whole time. The environment is clean, safe, and perfect for kids. The staff ensures everyone has a great time.",
+  //   author: "Neha Verma",
+  //   role: "Aunt",
+  //   rating: 4,
+  //   image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-t1.png",
+  //   alt: "gamezone"
+  // }
 ];
 
 export const eventsSection = [
@@ -309,7 +295,7 @@ export const eventsSection = [
     reverse: true,
     images: [
       {
-        src: 'https://res.cloudinary.com/dg0kso6zc/image/upload/w_400,h_400,c_fill,q_100,g_auto/v1736951822/skyville-gamezone-k1_qdlfae.avif',
+        src: '/assets/kitty-party/skyville-gamezone-k1_qdlfae.webp',
         alt: 'gamezone',
         title: 'Skyville Gamezone Adventure 1',
         description: 'A vibrant depiction of gaming fun at Skyville Gamezone.',
@@ -317,7 +303,7 @@ export const eventsSection = [
         tags: ['Skyville', 'Gamezone', 'Fun', 'Gaming'],
       },
       {
-        src: 'https://res.cloudinary.com/dg0kso6zc/image/upload/w_400,h_400,c_fill,q_auto,g_auto,f_auto/v1736957569/skyville-gamezone-k4_yiy5wl.png',
+        src: '/assets/kitty-party/skyville-gamezone-k4_yiy5wl.webp',
         alt: 'gamezone',
         title: 'Skyville Gamezone Adventure 1',
         description: 'A vibrant depiction of gaming fun at Skyville Gamezone.',
@@ -325,7 +311,7 @@ export const eventsSection = [
         tags: ['Skyville', 'Gamezone', 'Fun', 'Gaming'],
       },
       {
-        src: 'https://res.cloudinary.com/dg0kso6zc/image/upload/w_400,h_400,c_fill,q_100,g_auto/v1736951821/skyville-gamezone-k3_al3ilm.avif',
+        src: '/assets/kitty-party/skyville-gamezone-k3_al3ilm.webp',
         alt: 'gamezone',
         title: 'Skyville Gamezone Adventure 2',
         description: 'Thrilling experiences captured at Skyville Gamezone.',
@@ -333,7 +319,7 @@ export const eventsSection = [
         tags: ['Skyville', 'Gamezone', 'Thrill', 'Adventure'],
       },
       {
-        src: 'https://res.cloudinary.com/dg0kso6zc/image/upload/w_400,h_400,c_fill,q_100,g_auto/v1737447750/skyville-gamezone-k4_bzqfbi.avif',
+        src: '/assets/kitty-party/skyville-gamezone-k4_bzqfbi.webp',
         alt: 'gamezone',
         title: 'Skyville Gamezone Adventure 3',
         description: 'Enjoy gaming activities at Skyville Gamezone.',
@@ -351,7 +337,7 @@ export const eventsSection = [
     location: "SKYVILLE Adventure Zone",
     images: [
       {
-        src: 'https://res.cloudinary.com/dg0kso6zc/image/upload/w_400,h_400,c_fill,q_100,g_auto/v1736701893/skyville-gamezone-image13_dydize.jpg',
+        src: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-image13.avif',
         alt: 'gamezone',
         title: 'Skyville Gamezone Image 1',
         description: 'A fun and exciting image from Skyville Gamezone.',
@@ -359,7 +345,7 @@ export const eventsSection = [
         tags: ['Skyville', 'Gamezone', 'Entertainment'],
       },
       {
-        src: 'https://res.cloudinary.com/dg0kso6zc/image/upload/w_400,h_400,c_fill,q_100,g_auto/v1736701891/skyville-gamezone-image6_aphrr4.jpg',
+        src: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-image6.avif',
         alt: 'gamezone',
         title: 'Skyville Gamezone Image 2',
         description: 'Enjoyable moments captured at Skyville Gamezone.',
@@ -367,7 +353,7 @@ export const eventsSection = [
         tags: ['Skyville', 'Gamezone', 'Activities'],
       },
       {
-        src: 'https://res.cloudinary.com/dg0kso6zc/image/upload/w_400,h_400,c_fill,q_100,g_auto/v1736701893/skyville-gamezone-image10_fqu8p9.jpg',
+        src: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-image10.avif',
         alt: 'gamezone',
         title: 'Skyville Gamezone Image 3',
         description: 'Memorable experiences at Skyville Gamezone.',
@@ -375,7 +361,7 @@ export const eventsSection = [
         tags: ['Skyville', 'Gamezone', 'Fun'],
       },
       {
-        src: 'https://res.cloudinary.com/dg0kso6zc/image/upload/w_400,h_400,c_fill,q_100,g_auto/v1736701891/skyville-gamezone-image7_npxqi2.jpg',
+        src: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-image7.avif',
         alt: 'gamezone',
         title: 'Skyville Gamezone Image 4',
         description: 'Exciting moments captured at Skyville Gamezone.',
@@ -391,14 +377,14 @@ export const eventsSection = [
       //   tags: ['Skyville', 'Gamezone', 'Adventure'],
       // },
       {
-        src: 'https://res.cloudinary.com/dg0kso6zc/image/upload/w_400,h_400,c_fill,q_100,g_auto/v1737447448/skyville-gamezone-s1_1_kogdxo.avif',
+        src: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-image11.avif',
         alt: 'gamezone',
         title: 'Skyville Gamezone Image 5',
         description: 'Adventure and thrill at Skyville Gamezone.',
         category: 'Gamezone',
         tags: ['Skyville', 'Gamezone', 'Adventure'],
       },
-    ],      
+    ],
   },
   {
     id: 3,
@@ -410,7 +396,7 @@ export const eventsSection = [
     reverse: true,
     images: [
       {
-        src: 'https://res.cloudinary.com/dg0kso6zc/image/upload/w_400,h_400,c_fill,q_100,g_auto/v1736701608/skyville-gamezone-image1_rmoreb.jpg',
+        src: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-image1.avif',
         alt: 'gamezone',
         title: 'Skyville Gamezone Image 8',
         description: 'Exciting adventures at Skyville Gamezone.',
@@ -418,7 +404,7 @@ export const eventsSection = [
         tags: ['Skyville', 'Gamezone', 'Adventure'],
       },
       {
-        src: 'https://res.cloudinary.com/dg0kso6zc/image/upload/w_400,h_400,c_fill,q_100,g_auto/v1736701890/skyville-gamezone-image2_ffjttn.jpg',
+        src: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-image2.avif',
         alt: 'gamezone',
         title: 'Skyville Gamezone Image 9',
         description: 'Fun and entertainment at Skyville Gamezone.',
@@ -426,7 +412,7 @@ export const eventsSection = [
         tags: ['Skyville', 'Gamezone', 'Entertainment'],
       },
       {
-        src: 'https://res.cloudinary.com/dg0kso6zc/image/upload/w_400,h_400,c_fill,q_100,g_auto/v1736701888/skyville-gamezone-image5_eyr52k.jpg',
+        src: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-image5.avif',
         alt: 'gamezone ',
         title: 'Skyville Gamezone Image 10',
         description: 'Memorable moments at Skyville Gamezone.',
@@ -434,7 +420,7 @@ export const eventsSection = [
         tags: ['Skyville', 'Gamezone', 'Memorable'],
       },
       {
-        src: 'https://res.cloudinary.com/dg0kso6zc/image/upload/w_400,h_400,c_fill,q_100,g_auto/v1736951626/skyville-gamezone-3771_znlhuq.avif',
+        src: '/assets/B1.png',
         alt: 'gamezone',
         title: 'Skyville Gamezone Excitement 16',
         description: 'Top entertainment at Skyville Gamezone.',
@@ -442,7 +428,7 @@ export const eventsSection = [
         tags: ['Skyville', 'Gamezone', 'Gaming', 'Excitement'],
       },
       {
-        src: 'https://res.cloudinary.com/dg0kso6zc/image/upload/w_400,h_400,c_fill,q_100,f_auto,g_auto/v1736955903/skyville-gamezone-3977_tilktg.jpg',
+        src: '/assets/B2.png',
         alt: 'gamezone',
         title: 'Skyville Gamezone Excitement 4',
         description: 'Capturing the excitement at Skyville Gamezone.',
@@ -450,7 +436,7 @@ export const eventsSection = [
         tags: ['Skyville', 'Gamezone', 'Excitement', 'Fun'],
       },
       {
-        src: 'https://res.cloudinary.com/dg0kso6zc/image/upload/w_400,h_400,c_fill,q_100,g_auto/v1736956408/skyville-gamezone-4094_x5odk5.jpg',
+        src: '/assets/B3.png',
         alt: 'gamezone',
         title: 'Skyville Gamezone Excitement 13',
         description: 'Thrills and entertainment at Skyville Gamezone.',
@@ -468,7 +454,7 @@ export const eventsSection = [
     location: "SKYVILLE Business Center",
     images: [
       {
-        src: 'https://res.cloudinary.com/dg0kso6zc/image/upload/w_400,h_400,c_fill,q_100,g_auto/v1736951629/skyville-gamezone-3897_bkvbid.avif',
+        src: '/assets/corporate-events/skyville-gamezone-3897_bkvbid.webp',
         alt: 'gamezone',
         title: 'Skyville Gamezone Thrills 5',
         description: 'Amazing moments from Skyville Gamezone.',
@@ -476,7 +462,7 @@ export const eventsSection = [
         tags: ['Skyville', 'Gamezone', 'Gaming', 'Entertainment'],
       },
       {
-        src: 'https://res.cloudinary.com/dg0kso6zc/image/upload/w_400,h_400,c_fill,q_100,g_auto/v1736951630/skyville-gamezone-3858_ihuseo.avif',
+        src: '/assets/corporate-events/skyville-gamezone-3858_ihuseo.webp',
         alt: 'gamezone',
         title: 'Skyville Gamezone Highlights 6',
         description: 'Top experiences captured at Skyville Gamezone.',
@@ -484,7 +470,7 @@ export const eventsSection = [
         tags: ['Skyville', 'Gamezone', 'Highlights', 'Fun'],
       },
       {
-        src: 'https://res.cloudinary.com/dg0kso6zc/image/upload/w_400,h_400,c_fill,q_100,g_auto/v1736951629/skyville-gamezone-3866_agl1qo.avif',
+        src: '/assets/corporate-events/skyville-gamezone-3866_agl1qo.webp',
         alt: 'gamezone',
         title: 'Skyville Gamezone Fun 8',
         description: 'Fun-filled times at Skyville Gamezone.',
@@ -492,7 +478,7 @@ export const eventsSection = [
         tags: ['Skyville', 'Gamezone', 'Activities', 'Entertainment'],
       },
       {
-        src: 'https://res.cloudinary.com/dg0kso6zc/image/upload/w_400,h_400,c_fill,q_100,g_auto/v1736951628/skyville-gamezone-3851_zyami4.avif',
+        src: '/assets/corporate-events/skyville-gamezone-3851_zyami4.webp',
         alt: 'gamezone',
         title: 'Skyville Gamezone Experience 10',
         description: 'Top experiences at Skyville Gamezone.',
@@ -500,7 +486,7 @@ export const eventsSection = [
         tags: ['Skyville', 'Gamezone', 'Entertainment', 'Thrill'],
       },
       {
-        src: 'https://res.cloudinary.com/dg0kso6zc/image/upload/w_400,h_400,c_fill,q_100,g_auto/v1736951628/skyville-gamezone-3904_jicyvf.avif',
+        src: '/assets/corporate-events/skyville-gamezone-3904_jicyvf.webp',
         alt: 'gamezone',
         title: 'Skyville Gamezone Fun 11',
         description: 'Experience gaming fun at Skyville Gamezone.',
@@ -508,7 +494,7 @@ export const eventsSection = [
         tags: ['Skyville', 'Gamezone', 'Gaming', 'Adventure'],
       },
       {
-        src: 'https://res.cloudinary.com/dg0kso6zc/image/upload/w_400,h_400,c_fill,q_100,g_auto/v1736951627/skyville-gamezone-3844_gdrywc.avif',
+        src: '/assets/corporate-events/skyville-gamezone-3844_gdrywc.webp',
         alt: 'gamezone',
         title: 'Skyville Gamezone Highlights 15',
         description: 'Unforgettable fun at Skyville Gamezone.',

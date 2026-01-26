@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, Phone, X } from 'lucide-react';
-import { WhatsappHeader } from "../assets";
+import { WhatsappHeader } from "../../public/assets";
 import Image from 'next/image';
 const FloatingContact = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +25,7 @@ const FloatingContact = () => {
                             initial={{ opacity: 0, x: 20, scale: 0.8 }}
                             animate={{ opacity: 1, x: 0, scale: 1 }}
                             exit={{ opacity: 0, x: 20, scale: 0.8 }}
-                            transition={{ 
+                            transition={{
                                 duration: 0.3,
                                 ease: "easeOut",
                                 staggerChildren: 0.1
@@ -43,7 +43,7 @@ const FloatingContact = () => {
                                 className="bg-[#25D366] p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center"
                                 aria-label="Contact on WhatsApp"
                             >
-                                <Image src={WhatsappHeader} alt="WhatsApp" className="w-7 h-7 md:w-8 md:h-8" />
+                                <img src={WhatsappHeader} alt="WhatsApp" className="w-7 h-7 md:w-8 md:h-8" />
                             </motion.button>
 
                             <motion.button

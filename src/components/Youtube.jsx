@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback, memo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Play, Calendar } from "lucide-react";
 import Heading from "./Heading";
-import Image from "next/image";
+
 
 const YOUTUBE_API_KEY = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
 const CHANNEL_ID = "UCxeabT6dVsbjKoZa8W1Cq0g";
@@ -26,17 +26,16 @@ const VideoCard = memo(({ video, index, isSelected, onClick }) => {
       exit={{ opacity: 0, scale: 0.9 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       onClick={() => onClick(video)}
-      className={`group cursor-pointer rounded-xl overflow-hidden bg-n-7 border border-[#26242C] transition-transform duration-300 lg:hover:scale-105 ${
-        isSelected ? "ring-2 ring-color-1" : ""
-      }`}
+      className={`group cursor-pointer rounded-xl overflow-hidden bg-n-7 border border-[#26242C] transition-transform duration-300 lg:hover:scale-105 ${isSelected ? "ring-2 ring-color-1" : ""
+        }`}
     >
       <div className="relative aspect-video">
-        <Image
-          src={video.thumbnail}
-          alt={video.title}
-          className="w-full h-full object-cover"
-          width={300}
-          height={300}
+       <img
+        src={video.thumbnail}
+        alt={video.title}
+        className="w-full h-full object-cover"
+        width={300}
+        height={300}
         />
         <div className="absolute inset-0 bg-black opacity-0 lg:group-hover:opacity-50 transition-opacity"></div>
         <div className="absolute inset-0 flex items-center justify-center opacity-0 lg:group-hover:opacity-100 transition-opacity">

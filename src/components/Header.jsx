@@ -5,11 +5,10 @@ import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import { disablePageScroll, enablePageScroll } from 'scroll-lock'
 
-import ButtonGradient from '@/assets/svg/ButtonGradient'
-import MenuSvg from '@/assets/svg/MenuSvg'
+import ButtonGradient from '@/public/assets/svg/ButtonGradient'
+import MenuSvg from '@/public/assets/svg/MenuSvg'
 
-import logo from '@/assets/logo.svg'
-import {WhatsappHeader} from '@/assets'
+import { WhatsappHeader } from '@/public/assets'
 
 import { navigation } from '@/constants'
 
@@ -51,7 +50,7 @@ const Header = () => {
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <Link href="/" className="block w-[12rem] xl:mr-8">
-          <Image src={logo.src} width={120} height={40} alt="Skyville" />
+          <img src="/assets/logo.svg" width={120} height={40} alt="Skyville" />
         </Link>
 
         <nav
@@ -82,7 +81,7 @@ const Header = () => {
             onClick={() => window.open('https://wa.me/9468578138', '_blank')}
             className="flex items-center"
           >
-            <Image
+            <img
               src={WhatsappHeader.src}
               alt="WhatsApp"
               className="w-8 h-8 md:w-9 md:h-9"

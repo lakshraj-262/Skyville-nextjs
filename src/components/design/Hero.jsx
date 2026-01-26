@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+
 import { useEffect, useState } from "react";
 import { MouseParallax } from "react-just-parallax";
 
@@ -83,12 +83,12 @@ export const BackgroundImage = () => {
     <div className="absolute top-0 left-0 w-full h-auto hidden md:block">
       <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#030B1C] to-transparent"></div>
 
-      <Image
-        src="https://res.cloudinary.com/dg0kso6zc/image/upload/v1736696486/skyville-gamezone-background_qohxxo.avif"
-        className="w-full h-auto object-cover object-center"
-        width={1440}
-        height={1800}
-        alt="hero"
+      <img
+      src="https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-background.avif"
+      className="w-full h-auto object-cover object-center"
+      width={1440}
+      height={1800}
+      alt="hero"
       />
 
       <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-[#030B1C]"></div>

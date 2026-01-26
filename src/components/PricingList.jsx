@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
+
 import Link from "next/link";
 import { pricing } from "../constants";
 import Button from "./Button";
-import {check} from "@/assets/index"; // or use public/check.png with /check.png
+import { check } from "@/public/assets/index"; // or use public/check.png with /check.png
 
 const PricingList = () => {
   return (
@@ -42,7 +42,7 @@ const PricingList = () => {
                   key={index}
                   className="flex items-start py-5 border-t border-n-6"
                 >
-                  <Image src={check} width={24} height={24} alt="Check" />
+                  <img src={check} width={24} height={24} alt="Check" />
                   <p className="body-2 ml-4">{feature}</p>
                 </li>
               ))}

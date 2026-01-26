@@ -16,7 +16,7 @@ export const metadata = {
       "Discover how we maintain a safe and hygienic environment for all visitors at Skyville Udaipur.",
     images: [
       {
-        url: "https://res.cloudinary.com/dg0kso6zc/image/upload/v1737452070/Untitled_design_1_dnicgn.png",
+        url: "/assets/logo.svg",
         width: 1200,
         height: 630,
         alt: "Skyville Safety Measures",
@@ -29,7 +29,7 @@ export const metadata = {
     description:
       "Learn about Skyville's safety measures that ensure every visitor enjoys a clean and secure environment.",
     images: [
-      "https://res.cloudinary.com/dg0kso6zc/image/upload/v1737452070/Untitled_design_1_dnicgn.png",
+      "/assets/logo.svg",
     ],
   },
 };
@@ -46,15 +46,15 @@ export default function SafetyPage() {
         />
 
         <div className="flex flex-col gap-10 lg:flex-row items-center justify-center">
-          <Image
-            src="https://res.cloudinary.com/dg0kso6zc/image/upload/v1736697949/safety_rules_ny5dmu.avif"
+          <img
+            src="https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/safety_rules.avif"
             alt="Safety Rules English"
             width={640}
             height={800}
             className="rounded-[2rem] w-full max-w-[40rem] h-auto"
           />
-          <Image
-            src="https://res.cloudinary.com/dg0kso6zc/image/upload/v1736697949/safety_rules_hindi_qhivz7.avif"
+          <img
+            src="https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/safety_rules_hindi.avif"
             alt="Safety Rules Hindi"
             width={640}
             height={800}
@@ -69,8 +69,8 @@ export default function SafetyPage() {
         />
 
         <div className="flex gap-10 lg:flex-row items-center justify-center">
-          <Image
-            src="https://res.cloudinary.com/dg0kso6zc/image/upload/v1736761959/4x3_Flex_vnymhk.avif"
+          <img
+            src="https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/4x3%20Flex.avif"
             alt="Trampoline Rules"
             width={1200}
             height={800}

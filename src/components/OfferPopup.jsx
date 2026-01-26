@@ -3,7 +3,6 @@ import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
-import offerImage from '@/assets/offer/Trampoline-Offer-till-31Mar.jpg';
 
 const OfferPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -61,12 +60,12 @@ const OfferPopup = () => {
               onClick={handleWhatsAppClick}
               className="cursor-pointer transform transition-transform hover:scale-[1.02] active:scale-[0.98]"
             >
-              <Image
-                src={offerImage}
-                alt="Special Trampoline Offer"
-                className="w-full h-auto"
-                width={640}
-                height={800}
+              <img
+              src="/assets/offer/Maintenance.jpeg"
+              alt="Special Trampoline Offer"
+              className="w-full h-auto"
+              width={640}
+              height={800}
               />
             </div>
 

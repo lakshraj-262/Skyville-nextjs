@@ -16,7 +16,7 @@ export const metadata = {
       "Easily book your experience at Skyville – Udaipur’s top game zone for parties, arcade fun, and trampoline sessions.",
     images: [
       {
-        url: "https://res.cloudinary.com/dg0kso6zc/image/upload/v1737452070/Untitled_design_1_dnicgn.png",
+        url: "/assets/logo.svg",
         width: 1200,
         height: 630,
         alt: "Book Now Banner - Skyville Udaipur",
@@ -29,7 +29,7 @@ export const metadata = {
     description:
       "Reserve your time at Skyville Udaipur – the best place for fun-filled activities in the city.",
     images: [
-      "https://res.cloudinary.com/dg0kso6zc/image/upload/v1737452070/Untitled_design_1_dnicgn.png",
+      "/assets/logo.svg",
     ],
   },
 };

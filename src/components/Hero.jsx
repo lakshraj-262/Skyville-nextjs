@@ -1,12 +1,11 @@
 "use client";
-import { curve } from "../assets";
 import { BackgroundCircles } from "./design/Hero";
 import SubmitBtn from "./design/SubmitBtn";
 import VideoPreview from "./VideoPreview";
 import { projects } from "../constants";
 import { useRef } from 'react';
 import Card from "./Card";
-import Image from "next/image";
+
 
 const Hero = () => {
     const parallaxRef = useRef(null);
@@ -19,12 +18,12 @@ const Hero = () => {
                         Dive Into one of the Premier {` `}
                         <span className="inline-block relative uppercase">
                             Game Zone in Udaipur!{" "}
-                            <Image
-                                src={curve}
-                                className="absolute top-full left-0 w-full xl:-mt-2"
-                                width={624}
-                                height={28}
-                                alt="Curve"
+                            <img
+                            src={"/assets/hero/curve.png"}
+                            className="absolute top-full left-0 w-full xl:-mt-2"
+                            width={624}
+                            height={28}
+                            alt="Curve"
                             />
                         </span>
                     </h1>

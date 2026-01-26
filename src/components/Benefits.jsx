@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
+
 import { benefits } from "../constants";
 import Heading from "./Heading";
 import { GradientLight } from "./design/Benefits";
-import ClipPath from "../assets/svg/ClipPath";
+import ClipPath from "../../public/assets/svg/ClipPath";
 
 const Benefits = () => {
   return (
@@ -24,7 +24,7 @@ const Benefits = () => {
               <h5 className="h5 mb-5">{item.title}</h5>
               <p className="body-2 mb-6 text-n-3">{item.text}</p>
               <div className="flex items-center mt-auto">
-                <Image
+                <img
                   src={item.iconUrl}
                   width={48}
                   height={48}
@@ -41,7 +41,7 @@ const Benefits = () => {
             >
               <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-15 hidden lg:block">
                 {item.imageUrl && (
-                  <Image
+                  <img
                     src={item.imageUrl}
                     width={380}
                     height={362}

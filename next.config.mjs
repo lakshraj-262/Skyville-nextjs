@@ -7,6 +7,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'res.cloudinary.com', // ✅ Cloudinary images
       },
+      {
+        protocol: 'https',
+        hostname: 'cdn.jsdelivr.net', // ✅ Cloudinary images
+      },
     ],
   },
   // Add headers to ensure proper content types for robots.txt and sitemap
