@@ -69,7 +69,7 @@ const OfferPopup = () => {
               />
             </div>
 
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+            {/* <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
               <button
                 onClick={handleWhatsAppClick}
                 className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full transition-colors shadow-lg flex items-center justify-center gap-2"
@@ -79,7 +79,7 @@ const OfferPopup = () => {
                 </svg>
                 Book Now on WhatsApp
               </button>
-            </div>
+            </div> */}
           </motion.div>
         </motion.div>
       )}
