@@ -17,7 +17,7 @@ const Footer = () => {
           {/* Logo and company info */}
           <div className="flex flex-col items-center justify-center mb-8 md:flex-none md:items-start md:justify-start md:mb-0">
             <Link href="/" className="inline-block mb-2">
-              <img src="/assets/logo.svg" width={150} height={40} alt="Skyville Udaipur Logo" />
+              <img src="/assets/Skybounce.png" width={150} height={40} alt="Skyville Udaipur Logo" />
             </Link>
             <p className="text-sm text-gray-400 mt-2 mb-4">
               Where fun meets adventure!

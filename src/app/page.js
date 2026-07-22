@@ -24,7 +24,7 @@ export const metadata = {
       "Visit our Game Zone in Udaipur for a trampoline park, arcade games, bowling, birthday parties, school picnics, and kitty parties! Fun for all ages.",
     images: [
       {
-        url: "/assets/logo.svg",
+        url: "/assets/Skybounce.png",
         width: 1200,
         height: 630,
         alt: "Skyville Udaipur Game Zone Banner",
@@ -36,7 +36,7 @@ export const metadata = {
     title: "Skyville Udaipur",
     description: "Your premier destination for events, experiences, and more in Udaipur.",
     images: [
-      "/assets/logo.svg",
+      "/assets/Skybounce.png",
     ],
   },
 };

@@ -19,7 +19,7 @@ export const metadata = {
       "Have questions or need to plan an event? Contact Skyville for the best trampoline, arcade, and party zone in Udaipur.",
     images: [
       {
-        url: "/assets/logo.svg",
+        url: "/assets/Skybounce.png",
         width: 1200,
         height: 630,
         alt: "Contact Skyville - Game Zone Udaipur",
@@ -32,7 +32,7 @@ export const metadata = {
     description:
       "Reach out to us for bookings, general questions, or event inquiries in Udaipur.",
     images: [
-      "/assets/logo.svg",
+      "/assets/Skybounce.png",
     ],
   },
 };

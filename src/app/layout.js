@@ -35,7 +35,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/assets/logo.svg",
+        url: "/assets/Skybounce.png",
         width: 1200,
         height: 630,
         alt: "Skyville Udaipur Game Zone",
@@ -47,7 +47,7 @@ export const metadata = {
     title: "Skyville Udaipur",
     description:
       "Trampoline park, arcade games, and birthday party venue in Udaipur.",
-    images: ["/assets/logo.svg"],
+    images: ["/assets/Skybounce.png"],
     creator: "@skyvilleudaipur",
   },
 };
@@ -64,7 +64,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href="/assets/logo.svg" />
+        <link rel="apple-touch-icon" href="/assets/Skybounce.png" />
         <meta name="theme-color" content="#ffffff" />
         <link rel="manifest" href="/manifest.json" />
       </head>

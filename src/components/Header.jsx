@@ -50,7 +50,7 @@ const Header = () => {
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <Link href="/" className="block w-[12rem] xl:mr-8">
-          <img src="/assets/logo.svg" width={120} height={40} alt="Skyville" />
+          <img src="/assets/Skybounce.png" width={120} height={40} alt="Skyville" />
         </Link>
 
         <nav

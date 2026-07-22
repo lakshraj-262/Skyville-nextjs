@@ -16,7 +16,7 @@ export const metadata = {
       "Explore our pricing for games, birthday packages, school picnics, and more at Skyville Udaipur.",
     images: [
       {
-        url: "/assets/logo.svg",
+        url: "/assets/Skybounce.png",
         width: 1200,
         height: 630,
         alt: "Skyville Pricing",
@@ -29,7 +29,7 @@ export const metadata = {
     description:
       "Find the best value for fun at Skyville with our transparent and budget-friendly pricing.",
     images: [
-      "/assets/logo.svg",
+      "/assets/Skybounce.png",
     ],
   },
 };

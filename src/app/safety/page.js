@@ -16,7 +16,7 @@ export const metadata = {
       "Discover how we maintain a safe and hygienic environment for all visitors at Skyville Udaipur.",
     images: [
       {
-        url: "/assets/logo.svg",
+        url: "/assets/Skybounce.png",
         width: 1200,
         height: 630,
         alt: "Skyville Safety Measures",
@@ -29,7 +29,7 @@ export const metadata = {
     description:
       "Learn about Skyville's safety measures that ensure every visitor enjoys a clean and secure environment.",
     images: [
-      "/assets/logo.svg",
+      "/assets/Skybounce.png",
     ],
   },
 };
