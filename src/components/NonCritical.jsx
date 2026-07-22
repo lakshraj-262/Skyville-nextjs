@@ -5,10 +5,10 @@ import dynamic from 'next/dynamic';
 import Loading from '@/components/Loading';
 
 
-const OfferPopup = dynamic(() => import('@/components/OfferPopup'), {
-    ssr: false,
-    loading: () => <Loading/>
-});
+// const OfferPopup = dynamic(() => import('@/components/OfferPopup'), {
+//     ssr: false,
+//     loading: () => <Loading/>
+// });
 
 const FloatingContact = dynamic(() => import('@/components/FloatingContact'), {
     ssr: false,
@@ -27,9 +27,9 @@ const ScrollToTopOnRouteChange = dynamic(() => import('@/components/ScrollToTopO
 function NonCritical() {
     return (
       <>
-        <Suspense fallback={<Loading />}>
+        {/* <Suspense fallback={<Loading />}>
           <OfferPopup />
-        </Suspense>
+        </Suspense> */}
         <Suspense fallback={<Loading />}>
           <FloatingContact />
         </Suspense>
