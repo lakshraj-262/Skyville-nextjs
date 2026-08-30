@@ -17,8 +17,7 @@ const Testimonials = () => {
 
     // Create script element
     const script = document.createElement("script");
-    script.src = "https://static.elfsight.com/platform/platform.js";
-    // script.src = "https://cdn.trustindex.io/loader.js?684a535416bd231f3426f3396fc";
+    script.src = "https://elfsightcdn.com/platform.js";
     script.async = true;
     script.defer = true;
     
@@ -54,7 +53,8 @@ const Testimonials = () => {
         <div className="w-full">
           <div 
             ref={widgetContainerRef}
-            className="elfsight-app-d2030dcf-6155-42c6-95f8-6fd62434a127"
+            className="elfsight-app-129936b6-01b0-4d05-825f-eb69cedc980b"
+            data-elfsight-app-lazy
           />
           {/* <div 
             ref={widgetContainerRef}

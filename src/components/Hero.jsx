@@ -17,7 +17,7 @@ const Hero = () => {
                     <h1 className="h1 mt-3 md:mb-16 mb-12  ">
                         Dive Into one of the Premier {` `}
                         <span className="inline-block relative uppercase">
-                            Game Zone in Udaipur!{" "}
+                            Adventure Zone in Udaipur!{" "}
                             <img
                             src={"/assets/hero/curve.png"}
                             className="absolute top-full left-0 w-full xl:-mt-2"
@@ -28,7 +28,7 @@ const Hero = () => {
                         </span>
                     </h1>
                     <p className="body-1 max-w-3xl mx-auto mb-10 text-n-2 lg:mb-8">
-                        Enjoy Our Trampoline Park, Soft Play Area, and Arcade Games
+                        Enjoy Our Trampoline Park, Soft Play Area, Inflatable Bounce House &amp; More
                     </p>
 
                     <div className="body-1 hidden md:flex items-center justify-center p-4 my-20">

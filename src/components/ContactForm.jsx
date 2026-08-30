@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Send } from 'lucide-react'
+import { validateEmail, validatePhone } from '@/lib/formValidation'
 
 const initialFormData = {
   name: '',
@@ -13,9 +14,32 @@ const initialFormData = {
 
 const ContactForm = () => {
   const [formData, setFormData] = useState(initialFormData)
+  const [errors, setErrors] = useState({})
+
+  const validateForm = () => {
+    const nextErrors = {}
+    const emailError = validateEmail(formData.email)
+    const phoneError = validatePhone(formData.phone)
+
+    if (emailError) {
+      nextErrors.email = emailError
+    }
+
+    if (phoneError) {
+      nextErrors.phone = phoneError
+    }
+
+    return nextErrors
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    const nextErrors = validateForm()
+
+    if (Object.keys(nextErrors).length > 0) {
+      setErrors(nextErrors)
+      return
+    }
 
     const formUrl =
       'https://docs.google.com/forms/d/e/1FAIpQLSf6hRXqB7zbB7pWs7S35-HpktyLRJeeZ0YKkayBPit3zIPGhQ/formResponse'
@@ -35,6 +59,7 @@ const ContactForm = () => {
 
       alert('Form submitted successfully!')
       setFormData(initialFormData)
+      setErrors({})
     } catch (error) {
       console.error('Error submitting form:', error)
       alert('There was an error submitting the form. Please try again.')
@@ -43,9 +68,15 @@ const ContactForm = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target
+
     setFormData((prev) => ({
       ...prev,
       [name]: value
+    }))
+
+    setErrors((prev) => ({
+      ...prev,
+      [name]: ''
     }))
   }
 
@@ -79,9 +110,12 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-4 py-3 bg-n-7 border border-n-6 rounded-xl text-n-1 focus:outline-none focus:border-color-1"
+            className={`w-full px-4 py-3 bg-n-7 border rounded-xl text-n-1 focus:outline-none focus:border-color-1 ${
+              errors.email ? 'border-red-500' : 'border-n-6'
+            }`}
             required
           />
+          {errors.email && <p className="mt-2 text-sm text-red-400">{errors.email}</p>}
         </div>
       </div>
 
@@ -93,9 +127,13 @@ const ContactForm = () => {
           name="phone"
           value={formData.phone}
           onChange={handleChange}
-          className="w-full px-4 py-3 bg-n-7 border border-n-6 rounded-xl text-n-1 focus:outline-none focus:border-color-1"
+          inputMode="tel"
+          className={`w-full px-4 py-3 bg-n-7 border rounded-xl text-n-1 focus:outline-none focus:border-color-1 ${
+            errors.phone ? 'border-red-500' : 'border-n-6'
+          }`}
           required
         />
+        {errors.phone && <p className="mt-2 text-sm text-red-400">{errors.phone}</p>}
       </div>
 
       <div>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Background Card with Rounded Corners in Medium Purple -->
+  <rect width="512" height="512" rx="100" fill="#7b5ba6"/>
+
+  <!-- Birthday Party Icon Group -->
+  <g fill="none" stroke="#0f172a" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    
+    <!-- Plate / Base Line -->
+    <path d="M 135 360 L 377 360" />
+
+    <!-- Cake Base Tier -->
+    <path d="M 150 360 L 150 295 C 150 285 158 278 168 278 L 344 278 C 354 278 362 285 362 295 L 362 360" />
+
+    <!-- Frosting Wave on Base Tier -->
+    <path d="M 150 320 C 170 335 190 310 210 320 C 230 330 250 310 270 320 C 290 330 310 310 330 320 C 345 328 355 315 362 320" />
+
+    <!-- Cake Top Tier -->
+    <path d="M 185 278 L 185 225 C 185 215 193 208 203 208 L 275 208 C 285 208 293 215 293 225 L 293 278" />
+
+    <!-- Present / Gift Box on Base Tier -->
+    <path d="M 285 278 L 285 238 C 285 231 290 226 297 226 L 343 226 C 350 226 355 231 355 238 L 355 278" />
+    <path d="M 320 226 L 320 278" />
+    <!-- Ribbon Bow -->
+    <path d="M 320 226 C 310 212 300 220 320 226 C 340 220 330 212 320 226 Z" />
+
+    <!-- Candles -->
+    <!-- Candle 1 -->
+    <path d="M 205 208 L 205 178" />
+    <!-- Flame 1 -->
+    <path d="M 205 178 C 196 166 205 148 205 148 C 205 148 214 166 205 178 Z" fill="#7b5ba6" />
+
+    <!-- Candle 2 -->
+    <path d="M 239 208 L 239 178" />
+    <!-- Flame 2 -->
+    <path d="M 239 178 C 230 166 239 148 239 148 C 239 148 248 166 239 178 Z" fill="#7b5ba6" />
+
+    <!-- Candle 3 -->
+    <path d="M 273 208 L 273 178" />
+    <!-- Flame 3 -->
+    <path d="M 273 178 C 264 166 273 148 273 148 C 273 148 282 166 273 178 Z" fill="#7b5ba6" />
+
+    <!-- Confetti & Streamers -->
+    <!-- Left Streamer -->
+    <path d="M 155 210 Q 140 195 160 180 Q 175 165 155 150" />
+    <!-- Right Streamer -->
+    <path d="M 357 210 Q 372 195 352 180 Q 337 165 357 150" />
+
+    <!-- Confetti Dots -->
+    <circle cx="150" cy="125" r="8" fill="#0f172a" stroke="none" />
+    <circle cx="362" cy="125" r="8" fill="#0f172a" stroke="none" />
+
+    <!-- Burst Lines -->
+    <path d="M 205 128 L 198 112" />
+    <path d="M 239 125 L 239 108" />
+    <path d="M 273 128 L 280 112" />
+    <path d="M 132 235 L 118 240" />
+    <path d="M 380 235 L 394 240" />
+
+  </g>
+</svg>

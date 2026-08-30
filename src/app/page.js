@@ -11,17 +11,17 @@ const Testimonials = dynamic(() => import('@/components/Testimonials'), {
 });
 
 export const metadata = {
-  title: "Best Game Zone in Udaipur - Trampoline Park, Arcade Games, Bowling, Birthday Parties & More!",
+  title: "Best Game Zone in Udaipur - Trampoline Park, Bounce House, Dining & More!",
   description:
-    "Looking for fun activities in Udaipur? Visit our Game Zone, featuring a trampoline park, soft play area, arcade games, bowling, and options for birthday parties, school picnics, and kitty parties!",
+    "Looking for fun activities in Udaipur? Visit our Game Zone, featuring a trampoline park, soft play area, inflatable bounce house, Flavours by Skyville dining, and options for birthday parties, school picnics, and kitty parties!",
   keywords:
-    "Game zone Udaipur, Game zone, trampoline park, soft play area, arcade games, bowling, birthday parties, school picnics, kitty party, Best place for kids, Amusement Park",
+    "Game zone Udaipur, Game zone, trampoline park, soft play area, inflatable bounce house, flavours by skyville, dining, birthday parties, school picnics, kitty party, Best place for kids, Amusement Park",
   openGraph: {
     type: "website",
     url: "https://skyvilleudaipur.com/",
-    title: "The Ultimate Game Zone in Udaipur - Trampoline Park, Arcade Games & More",
+    title: "The Ultimate Game Zone in Udaipur - Trampoline Park, Bounce House & More",
     description:
-      "Visit our Game Zone in Udaipur for a trampoline park, arcade games, bowling, birthday parties, school picnics, and kitty parties! Fun for all ages.",
+      "Visit our Game Zone in Udaipur for a trampoline park, inflatable bounce house, Flavours by Skyville dining, birthday parties, school picnics, and kitty parties! Fun for all ages.",
     images: [
       {
         url: "/assets/Skybounce.png",

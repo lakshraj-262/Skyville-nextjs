@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Background Card with Rounded Corners in Vibrant Orange -->
+  <rect width="512" height="512" rx="100" fill="#f97316"/>
+
+  <!-- Corporate Events Icon Group (Matching the clean rounded icon style) -->
+  <g fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+    
+    <!-- Central Building / Convention Center Structure -->
+    <path d="M 180 390 L 180 240 C 180 225 192 213 207 213 L 305 213 C 320 213 332 225 332 240 L 332 390" fill="#f97316" />
+    
+    <!-- Roof / Modern Architectural Peak -->
+    <path d="M 150 243 L 256 155 L 362 243" />
+
+    <!-- Double Glass Entry Doors at Ground Level -->
+    <path d="M 226 390 L 226 315 C 226 298 239 285 256 285 C 273 285 286 298 286 315 L 286 390" />
+
+    <!-- Professional Business Presentation Screen / Stage Inside -->
+    <rect x="210" y="235" width="92" height="42" rx="6" fill="#0f172a" stroke="none" />
+    <!-- Presentation Graph Line on Screen -->
+    <path d="M 220 265 L 238 250 L 256 258 L 282 242" stroke="#f97316" stroke-width="6" />
+
+    <!-- Side Office Windows -->
+    <rect x="200" y="175" width="22" height="24" rx="4" fill="#0f172a" stroke="none" />
+    <rect x="290" y="175" width="22" height="24" rx="4" fill="#0f172a" stroke="none" />
+
+    <!-- Networking Connection / Global Exchange Nodes (Above Roof) -->
+    <path d="M 205 130 C 190 110 215 90 235 105" stroke-width="12" />
+    <path d="M 307 130 C 322 110 297 90 277 105" stroke-width="12" />
+    <circle cx="256" cy="115" r="8" fill="#0f172a" stroke="none" />
+
+  </g>
+</svg>

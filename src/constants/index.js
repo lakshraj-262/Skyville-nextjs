@@ -21,6 +21,11 @@ export const navigation = [
   },
   {
     id: "4",
+    title: "Restaurant",
+    url: "/restaurant",
+  },
+  {
+    id: "5",
     title: "Contact Us",
     url: "/contact",
   },
@@ -30,43 +35,57 @@ export const pricing = [
   {
     id: "0",
     title: "Trampoline Park",
-    description: "All above 8 Years Bounce into fun, where the sky's the limit!",
-    price: "600-700",
+    description: "Above 6 Years - Bounce into fun, where the sky's the limit!",
+    price: "600-350",
+    priceLabel: "1 hr / 30 min",
     features: [
-      "1-hour trampoline access",
+      "1-hour access: 600 INR",
+      "30-min access: 350 INR",
       "Grip socks included",
       "Locker access",
-      "Safety briefing",
-      "Basic game zone access"
+      "Safety briefing"
     ],
   },
   {
     id: "1",
     title: "Soft Play Area",
-    description: "Ideal for kids below 8 Years, A world of fun, just for the little ones",
-    price: "450-550",
+    description: "Below 6 Years - A world of fun, just for the little ones",
+    price: "450-250",
+    priceLabel: "1 hr / 30 min",
     features: [
-      "1-hour pass",
-      "Soft, small slides for kids to climb up and slide down",
+      "1-hour access: 450 INR",
+      "30-min access: 250 INR",
+      "Soft slides and climbing areas",
       "Locker access",
-      "Padded flooring to ensure safety and cushion falls",
-      "Small trampoline areas",
-      "A large area filled with soft plastic balls for kids to dive into and play."
+      "Padded flooring for safety"
     ],
   },
   {
     id: "2",
-    title: "Arcade Games",
-    description: "Arcade action, endless excitement! VR games awaits Here!",
-    price: "Min. 500",
+    title: "Inflatable",
+    description: "Jump, slide, and bounce in our inflatable zone!",
+    price: "450-250",
+    priceLabel: "1 hr / 30 min",
     features: [
-      "Interactive Controls",
-      "Multiplayer Options",
-      "Bonus Rounds and Power-Ups",
-      "Exciting Visuals and Sounds",
-      "Progressive Levels",
-      "Ticket Redemption",
-      "360 Degree Cycle Round"
+      "1-hour access: 450 INR",
+      "30-min access: 250 INR",
+      "Safe inflatable structures",
+      "Supervised play area",
+      "Fun for all ages"
+    ],
+  },
+  {
+    id: "3",
+    title: "Food & Beverages",
+    description: "Refresh yourself with delicious food and drinks",
+    price: "On MRP",
+    priceLabel: "Per Item",
+    features: [
+      "Variety of snacks and meals",
+      "Cold and hot beverages",
+      "Fresh and hygienic",
+      "Reasonable pricing",
+      "Quick service"
     ],
   },
 ];
@@ -84,20 +103,20 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "VR and Simulators",
-    text: "Virtual reality games and car or flight simulators for immersive fun.",
+    title: "Bounce House",
+    text: "Colorful inflatable bounce castles and jumping zones where kids can bounce, slide, and giggle endlessly in a safe, padded environment.",
 
-    iconUrl: "/assets/benefits/vr.svg",
-    imageUrl: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-vr.avif",
+    iconUrl: "/assets/benefits/Bounce.svg",
+    imageUrl: "/assets/Bounce.webp",
     light: true,
   },
   {
     id: "3",
-    title: "Arcade Area",
-    text: "Multiplayer games: Racing, shooting, or sports games for competitive fun with friends.",
+    title: "Birthday Parties",
+    text: "Celebrate your special day with themed decorations, dedicated party hosts, exciting games, and a cake-cutting ceremony that creates memories to cherish forever.",
 
-    iconUrl: "/assets/benefits/arcade.svg",
-    imageUrl: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/arcade_image.avif",
+    iconUrl: "/assets/benefits/BirthdayParties.svg",
+    imageUrl: "/assets/B2.png",
     light: true,
   },
   {
@@ -111,18 +130,20 @@ export const benefits = [
   },
   {
     id: "5",
-    title: "Bowling Alley",
-    text: "Enjoy premium bowling lanes for friendly competition and fun.",
-    iconUrl: "/assets/benefits/bowling.svg",
-    imageUrl: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-bowling.avif",
+    title: "Corporate Events",
+    text: "Host memorable team-building sessions, offsite meetings, and office celebrations with engaging group activities, dedicated spaces, and tailored hospitality packages.",
+
+    iconUrl: "/assets/benefits/Corporate.svg",
+    imageUrl: "/assets/corporate-events/skyville-gamezone-3897_bkvbid.webp",
     light: true,
   },
   {
     id: "6",
-    title: "Food Area",
-    text: "Comfortable seating areas to unwind and celebrate special occasions.",
+    title: "Skyville Bistro",
+    text: "Relish a curated menu of gourmet delicacies, wood-fired pizzas, fresh desserts, and artisanal beverages in our elegant in-house restaurant — the perfect place to recharge between adventures.",
+
     iconUrl: "/assets/benefits/food.svg",
-    imageUrl: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-food.avif",
+    imageUrl: "/assets/Flavours by Skyville.JPG.jpeg",
     light: true,
   },
 
@@ -185,31 +206,31 @@ export const faqData = [
 
 export const projects = [
   {
-    title: "Arcade Games",
-    description: "Step into the ultimate gaming zone! From classic arcade hits to modern action-packed games, experience endless fun and excitement. Perfect for gamers of all ages.",
-    src: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-arcade.webm",
-    alt: "gamezone",
-    url: "https://skyvilleudaipur.com/arcade-games"
+    title: "Inflatable Bounce House",
+    description: "Jump, slide, and bounce to your heart's content! Our vibrant inflatable bounce house offers safe, high-energy fun for kids — creating unforgettable moments of laughter and adventure.",
+    src: "/assets/Inflatable_Video.mp4",
+    alt: "inflatable-bounce-house",
+    url: "https://skyvilleudaipur.com/inflatable-bounce-house"
   },
   {
     title: "Trampoline/Soft Play",
     description: "Bounce, flip, and play in our state-of-the-art trampoline park! Younger kids can enjoy a safe and fun-filled soft play area designed just for them.",
-    src: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-trampoline.webm", // Replace with the actual video file
-    alt: "gamezone",
+    src: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-trampoline.webm",
+    alt: "trampoline-soft-play",
     url: "https://skyvilleudaipur.com/trampoline-soft-play"
   },
   {
-    title: "Bowling",
-    description: "Challenge your friends to an exciting game of bowling! With premium lanes and a lively atmosphere, it's the perfect place for fun and friendly competition.",
-    src: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-bowling.webm", // Replace with the actual video file
-    alt: "gamezone",
-    url: "https://skyvilleudaipur.com/bowling"
+    title: "Flavours by Skyville",
+    description: "Savor delicious delights at our in-house dining experience! From refreshing beverages to mouthwatering snacks and meals, Flavours by Skyville serves up tasty treats for every palate.",
+    src: "/assets/Restaurant/Flavours_Video.mp4",
+    alt: "flavours-by-skyville",
+    url: "/restaurant"
   },
   {
     title: "Parties & Events",
-    description: "Host unforgettable celebrations at Skyville! Whether it's a birthday, corporate gathering, or special event, we’ve got customizable packages to make your day extraordinary.",
-    src: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-events.webm", // Replace with the actual video file
-    alt: "gamezone",
+    description: "Host unforgettable celebrations at Skyville! Whether it's a birthday, corporate gathering, or special event, we've got customizable packages to make your day extraordinary.",
+    src: "https://cdn.jsdelivr.net/gh/VipulSoniwork/skyville-assets@main/skyville-gamezone-events.webm",
+    alt: "parties-events",
     url: "https://skyvilleudaipur.com/parties-events"
   }
 ];
@@ -454,7 +475,7 @@ export const eventsSection = [
     location: "SKYVILLE Business Center",
     images: [
       {
-        src: '/assets/corporate-events/skyville-gamezone-3897_bkvbid.webp',
+        src: '/assets/corporate-events/corporate-1.jpeg',
         alt: 'gamezone',
         title: 'Skyville Gamezone Thrills 5',
         description: 'Amazing moments from Skyville Gamezone.',
@@ -462,7 +483,7 @@ export const eventsSection = [
         tags: ['Skyville', 'Gamezone', 'Gaming', 'Entertainment'],
       },
       {
-        src: '/assets/corporate-events/skyville-gamezone-3858_ihuseo.webp',
+        src: '/assets/corporate-events/corporate-2.jpeg',
         alt: 'gamezone',
         title: 'Skyville Gamezone Highlights 6',
         description: 'Top experiences captured at Skyville Gamezone.',
@@ -470,7 +491,7 @@ export const eventsSection = [
         tags: ['Skyville', 'Gamezone', 'Highlights', 'Fun'],
       },
       {
-        src: '/assets/corporate-events/skyville-gamezone-3866_agl1qo.webp',
+        src: '/assets/corporate-events/corporate-3.jpeg',
         alt: 'gamezone',
         title: 'Skyville Gamezone Fun 8',
         description: 'Fun-filled times at Skyville Gamezone.',
@@ -478,13 +499,14 @@ export const eventsSection = [
         tags: ['Skyville', 'Gamezone', 'Activities', 'Entertainment'],
       },
       {
-        src: '/assets/corporate-events/skyville-gamezone-3851_zyami4.webp',
+        src: '/assets/corporate-events/corporate-4.jpeg',
         alt: 'gamezone',
         title: 'Skyville Gamezone Experience 10',
         description: 'Top experiences at Skyville Gamezone.',
         category: 'Gamezone',
         tags: ['Skyville', 'Gamezone', 'Entertainment', 'Thrill'],
       },
+      /*
       {
         src: '/assets/corporate-events/skyville-gamezone-3904_jicyvf.webp',
         alt: 'gamezone',
@@ -501,6 +523,7 @@ export const eventsSection = [
         category: 'Gamezone',
         tags: ['Skyville', 'Gamezone', 'Highlights', 'Adventure'],
       },
+      */
     ],
   },
 ];

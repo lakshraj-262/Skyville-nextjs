@@ -11,7 +11,7 @@ const HostEvents = () => {
     <div className="container ">
       <Heading
         className="h1 flex-col text-center"
-        title="Host Unforgettable Events at Skyville"
+        title="Host Unforgettable Events at SkyBounce"
       />
 
       <div className="relative">

@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Users, Globe2, Phone, MessageSquare, User, MapPin, Star, Clock, Heart } from 'lucide-react';
+import { validatePhone } from '@/lib/formValidation';
 
 const initialFormData = {
   name: '',
@@ -18,6 +19,7 @@ const initialFormData = {
 
 const CustomForm = () => {
   const [formData, setFormData] = useState(initialFormData);
+  const [errors, setErrors] = useState({});
 
   const activities = [
     'Trampoline Park (Above 8 Yrs)',
@@ -28,6 +30,12 @@ const CustomForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const phoneError = validatePhone(formData.phone);
+
+    if (phoneError) {
+      setErrors({ phone: phoneError });
+      return;
+    }
 
     const formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLScEhS6VMnRYy6xLxdUkgX3Th-9Cu-D4JzOCMXCtFCZ7rEUosQ/formResponse';
     const formDataPayload = new FormData();
@@ -57,6 +65,7 @@ const CustomForm = () => {
 
       alert('Form submitted successfully!');
       setFormData(initialFormData);
+      setErrors({});
     } catch (error) {
       console.error('Error submitting form:', error);
       alert('There was an error submitting the form. Please try again.');
@@ -79,6 +88,13 @@ const CustomForm = () => {
         ...prev,
         [name]: value
       }));
+
+      if (name === 'phone') {
+        setErrors(prev => ({
+          ...prev,
+          phone: ''
+        }));
+      }
     }
   };
 
@@ -114,9 +130,13 @@ const CustomForm = () => {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="w-full px-4 py-3 bg-n-7 border border-n-6 rounded-xl text-n-1 focus:outline-none focus:border-color-1"
+            inputMode="tel"
+            className={`w-full px-4 py-3 bg-n-7 border rounded-xl text-n-1 focus:outline-none focus:border-color-1 ${
+              errors.phone ? 'border-red-500' : 'border-n-6'
+            }`}
             required
           />
+          {errors.phone && <p className="mt-2 text-sm text-red-400">{errors.phone}</p>}
         </div>
       </div>
 
