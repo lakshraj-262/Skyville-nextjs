@@ -56,14 +56,14 @@ const visitSteps = [
 const safetyImages = [
   {
     title: "English Safety Rules",
-    src: "/assets/safety/Safety_Rules_English.png",
+    src: "/assets/Safety/Safety_Rules_English.png",
     alt: "Skyville safety rules in English",
     width: 1448,
     height: 1086,
   },
   {
     title: "Hindi Safety Rules",
-    src: "/assets/safety/Safety_Rules_Hindi.jpeg",
+    src: "/assets/Safety/Safety_Rules_Hindi.jpeg",
     alt: "Skyville safety rules in Hindi",
     width: 1536,
     height: 1024,
@@ -73,14 +73,14 @@ const safetyImages = [
 const trampolineImages = [
   {
     title: "English Trampoline Rules",
-    src: "/assets/safety/Rules_Protocols_English.png",
+    src: "/assets/Safety/Rules_Protocols_English.png",
     alt: "Skyville trampoline rules and protocols in English",
     width: 1085,
     height: 1450,
   },
   {
     title: "Hindi Trampoline Rules",
-    src: "/assets/safety/Rules_Protocols_Hindi.png",
+    src: "/assets/Safety/Rules_Protocols_Hindi.png",
     alt: "Skyville trampoline rules and protocols in Hindi",
     width: 1774,
     height: 887,
